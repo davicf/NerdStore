@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.24" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.24" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.24" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,11 @@
     <ProjectReference Include="..\NerdStore.Catalogo.Data\NerdStore.Catalogo.Data.csproj" />
     <ProjectReference Include="..\NerdStore.Catalogo.Domain\NerdStore.Catalogo.Domain.csproj" />
     <ProjectReference Include="..\NerdStore.Core\NerdStore.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Vitrine\" />
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>
