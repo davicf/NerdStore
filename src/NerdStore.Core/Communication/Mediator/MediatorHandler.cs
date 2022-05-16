@@ -2,15 +2,20 @@
 using NerdStore.Core.Messages;
 using System.Threading.Tasks;
 
-namespace NerdStore.Core
+namespace NerdStore.Core.Communication.Mediator
 {
-    public class MediatrHandler : IMediatrHandler
+    public class MediatorHandler : IMediatorHandler
     {
         private readonly IMediator _mediator;
 
-        public MediatrHandler(IMediator mediator)
+        public MediatorHandler(IMediator mediator)
         {
             _mediator = mediator;
+        }
+
+        public async Task<bool> EnviarComando<T>(T evento) where T : Command
+        {
+            return await _mediator.Send(evento);
         }
 
         public async Task PublicarEvento<T>(T evento) where T : Event
