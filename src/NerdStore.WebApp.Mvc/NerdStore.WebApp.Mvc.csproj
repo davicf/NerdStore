@@ -30,7 +30,6 @@
   <ItemGroup>
     <Folder Include="Views\Shared\Components\Cart\" />
     <Folder Include="Views\Vitrine\" />
-    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>
